@@ -16,11 +16,11 @@ function App() {
     let prob: number;
 
     if (!specific) {
-      // ANY matching symbol (AAA, BBB, etc.)
+      // ANY matching symbol (etc any triple symbols)
       prob = 1 / Math.pow(symbols, reels - 1);
       setMode("any");
     } else {
-      // IF looking for specific symbol
+      // IF looking for specific symbol (cherries only)
       prob = Math.pow(1 / symbols, reels);
       setMode("specific");
     }
@@ -86,7 +86,7 @@ function App() {
                 marginTop: "4px",
               }}
             >
-              At this point, just quit. Its nearly impossible to win. The house wins.
+              At this point, just quit. Its nearly impossible to win. The house ALWAYS wins.
             </span>
           )}
         </p>
