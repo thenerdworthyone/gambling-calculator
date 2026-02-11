@@ -20,7 +20,7 @@ function App() {
       prob = 1 / Math.pow(symbols, reels - 1);
       setMode("any");
     } else {
-      // IF looking for specific symbol (cherries only)
+      // IF looking for specific symbol 
       prob = Math.pow(1 / symbols, reels);
       setMode("specific");
     }
