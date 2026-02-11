@@ -4,8 +4,8 @@ import "./App.css";
 
 function App() {
   // useState<number>(int) where int is the placeholder when the user first open the website/localfile
-  const [reels, setReels] = useState<number>(3);
-  const [symbols, setSymbols] = useState<number>(20);
+  const [reels, setReels] = useState<number>(0);
+  const [symbols, setSymbols] = useState<number>(0);
   const [probs, setProbs] = useState<number | null>(null);
   const [specific, setSpecific] = useState<boolean>(false);
   const [mode, setMode] = useState<string>("");
@@ -30,7 +30,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>🎰 Slot Machine Probability Calculator 🎰</h1>
+      <h1>🎰Slot Machine Probability🎰</h1>
+      <h1>Calculator </h1>
       <h2>Let's go gambling!</h2>
 
       <div className="inputs">
@@ -53,7 +54,7 @@ function App() {
         />
       </div>
 
-      <div className="input-group">
+      <div className="inputs">
         <label>
           <input
             type="checkbox"
@@ -68,6 +69,7 @@ function App() {
    
 
       {probs !== null && (
+        <div className="results">
         <p>
           {mode === "specific"
             ? `Chance of hitting your desired symbol`
@@ -88,8 +90,10 @@ function App() {
             >
               At this point, just quit. Its nearly impossible to win. The house ALWAYS wins.
             </span>
+         
           )}
         </p>
+       </div>
 )}
 
       <p className="disclaimer">Don't gamble, kids.</p>

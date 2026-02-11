@@ -1,6 +1,60 @@
 .App{
     text-align: center;
-    color:  #35b655;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
-     
+h1{
+    margin:0;
+    color:rgb(155, 24, 24);
+}
+
+h2{
+   color: rgb(48, 196, 48);
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+}
+
+.inputs{
+
+    color:white;
+    margin-bottom: 15px;   
+    align-items: center;
+}
+
+
+.results {
+    color:goldenrod;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background:grey;
+    font-weight:bold;
+    color:rgb(155, 24, 24);
+    padding: 10px 20px;
+}
+
+button:hover {
+
+    background:rgb(155, 24, 24);
+    color: grey;
+}
+
+.disclaimer {
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    pointer-events: none;
+    font-size:25px;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px  1px 0 white,
+        1px  1px 0 white;
+        
 }
